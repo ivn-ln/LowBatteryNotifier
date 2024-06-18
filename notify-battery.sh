@@ -1,4 +1,5 @@
 #!/bin/bash
+export XDG_RUNTIME_DIR=/run/user/$(id -u)
 battery_level=$(acpi -b | grep -P -o '[0-9]+(?=%)')
 charging=$(acpi --ac-adapter | grep -o on-line)
 
