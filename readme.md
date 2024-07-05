@@ -6,5 +6,5 @@
 git clone https://github.com/ivn-ln/LowBatteryNotifier.git
 cd LowBatteryNotifier
 cp ./notify-battery.sh ~ -f
+crontab cron
 ```
-- Open current crontab in editor with ```crontab -e``` and put ```*/5 * * * * sh ~/notify-battery.sh``` at the end of the file
